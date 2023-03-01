@@ -1,0 +1,19 @@
+# Let's use our knowledge of errors and exceptions to fix the code and create a working calorie calculator.
+
+calories = {
+    "rice": 400,
+    "bread": 300,
+    "curry": 700,
+    "salad": 100,
+    "chutney": 100,
+    "papadums": 200,
+}
+
+meal = ["rice", "curry", "salad", "chutney", "bread", "papadums"]
+
+total = 0
+
+for item in meal:
+    total += calories[item]
+
+print("Total calories in meal: " + str(total))
